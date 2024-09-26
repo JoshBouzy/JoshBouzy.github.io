@@ -1,5 +1,7 @@
 # Think Python, 3rd edition
 
+Sa a se yon travay nan pwogrè.
+
 Jupyter notebooks and other material for the 3rd edition of *Think Python: How to Think Like a Computer Scientist*
 
 by Allen B. Downey
