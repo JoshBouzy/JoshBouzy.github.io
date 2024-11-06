@@ -392,11 +392,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>You can order print and ebook versions of <em>Think Python 3e</em> from
-<a class="reference external" href="https://bookshop.org/a/98697/9781098155438">Bookshop.org</a> and
+  <p>Ou ka kòmande vèsyon enprime ak ebook nan <em>Think Python 3e</em> sou
+<a class="reference external" href="https://bookshop.org/a/98697/9781098155438">Bookshop.org</a> ak
 <a class="reference external" href="https://www.amazon.com/_/dp/1098155432?smid=ATVPDKIKX0DER&amp;amp;_encoding=UTF8&amp;amp;tag=oreilly20-20&amp;amp;_encoding=UTF8&amp;amp;tag=greenteapre01-20&amp;amp;linkCode=ur2&amp;amp;linkId=e2a529f94920295d27ec8a06e757dc7c&amp;amp;camp=1789&amp;amp;creative=9325">Amazon</a>.</p>
 <section id="programming-as-a-way-of-thinking">
-<span id="chapter-programming"></span><h1><span class="section-number">1. </span>Programming as a way of thinking<a class="headerlink" href="#programming-as-a-way-of-thinking" title="Link to this heading">#</a></h1>
+<span id="chapter-programming"></span><h1><span class="section-number">1. </span>Pwogramasyon kòm yon fason pou panse<a class="headerlink" href="#programming-as-a-way-of-thinking" title="Link to this heading">#</a></h1>
 <p>Premye objektif liv sa a se pou anseye w kijan pou pwograme nan Python.
 Men, apawondi pwograme vle di apawondi yon nouvo fason pou panse; dezyèm objektif liv sa a se ede w panse tankou yon syantis òdinatè.
 Fason panse sa a konbine kèk nan pi bon karakteristik matematik, jeni, ak syans natirèl.
@@ -526,274 +526,373 @@ Vokabilè sa a enpòtan - w ap bezwen li pou konprann rès liv la, pou kominike 
 <p>Mwen pa pral kouvri operatè bitwise (FR: au niveau du bit) nan liv sa a, men ou ka li sou yo nan <a class="reference external" href="http://wiki.python.org/moin/BitwiseOperators">http://wiki.python.org/moin/BitwiseOperators</a>.</p>
 </section>
 <section id="expressions">
-<h2><span class="section-number">1.2. </span>Expressions<a class="headerlink" href="#expressions" title="Link to this heading">#</a></h2>
-<p>A collection of operators and numbers is called an <strong>expression</strong>.
-An expression can contain any number of operators and numbers.
-For example, here’s an expression that contains two operators.</p>
+  <h2><span class="section-number">1.2. </span>Ekspresyon<a class="headerlink" href="#expressions" title="Link to this heading">#</a></h2>
+<p>Yon kòlèksyon nan operatè ak nimewo yo rele yon <strong>ekspresyon</strong>.
+Yon ekspresyon ka genyen nenpòt kantite operatè ak nimewo.
+Pou egzanp, men yon ekspresyon ki gen de operatè yo.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">6</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">**</span> <span class="mi">2</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="mi">6</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">**</span> <span class="mi">2</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>42
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42
-</pre></div>
-</div>
-</div>
-</div>
-<p>Notice that exponentiation happens before addition.
-Python follows the order of operations you might have learned in a math class: exponentiation happens before multiplication and division, which happen before addition and subtraction.</p>
-<p>In the following example, multiplication happens before addition.</p>
+<p>Fè atansyon ke eksponansyasyon an fèt avan adisyon.
+Python swiv lòd operasyon ou ta ka aprann nan yon klas matematik: eksponansyasyon fèt avan miltiplikasyon ak divizyon, ki fèt avan adisyon ak soustraksyon.</p>
+<p>Nan egzanp ki vin apre a, miltiplikasyon fèt avan adisyon.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">12</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">6</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="mi">12</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">6</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>42
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42
-</pre></div>
-</div>
-</div>
-</div>
-<p>If you want the addition to happen first, you can use parentheses.</p>
+<p>Si ou vle ke adisyon fèt an premye, ou ka itilize paranthis.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">12</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="p">(</span><span class="mi">12</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>102
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>102
-</pre></div>
-</div>
-</div>
-</div>
-<p>Every expression has a <strong>value</strong>.
-For example, the expression <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">*</span> <span class="pre">7</span></code> has the value <code class="docutils literal notranslate"><span class="pre">42</span></code>.</p>
+<p>Chak ekspresyon gen yon <strong>valè</strong>.
+Pou egzanp, ekspresyon an <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">*</span> <span class="pre">7</span></code> gen valè <code class="docutils literal notranslate"><span class="pre">42</span></code>.</p>
 </section>
 <section id="arithmetic-functions">
-<h2><span class="section-number">1.3. </span>Arithmetic functions<a class="headerlink" href="#arithmetic-functions" title="Link to this heading">#</a></h2>
-<p>In addition to the arithmetic operators, Python provides a few <strong>functions</strong> that work with numbers.
-For example, the <code class="docutils literal notranslate"><span class="pre">round</span></code> function takes a floating-point number and rounds it off to the nearest whole number.</p>
+  <h2><span class="section-number">1.3. </span>Fonksyon Aritmètik<a class="headerlink" href="#arithmetic-functions" title="Link to this heading">#</a></h2>
+<p>Anplis operatè aritmetik, Python bay kèk <strong>fonksyon</strong> ki travay avèk nimewo yo. Pa egzanp, fonksyon <code class="docutils literal notranslate"><span class="pre">round</span></code> la pran yon nimewo k ap flote epi li wonn li nan nimewo antye ki pi pre li.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">42.4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42
-</pre></div>
-</div>
-</div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">42.4</span><span class="p">)</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>42
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">42.6</span><span class="p">)</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">42.6</span><span class="p">)</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>43
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>43
-</pre></div>
-</div>
-</div>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">abs</span></code> function computes the absolute value of a number.
-For a positive number, the absolute value is the number itself.</p>
+<p>Fonksyon <code class="docutils literal notranslate"><span class="pre">abs</span></code> la kalkile valè absoli yon nimewo.
+Pou yon nimewo pozitif, valè absoli a se nimewo a menm.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>42
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42
-</pre></div>
-</div>
-</div>
-</div>
-<p>For a negative number, the absolute value is positive.</p>
+<p>Pou yon nimewo negatif, valè absoli se pozitif.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">42</span><span class="p">)</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">42</span><span class="p">)</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>42
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>42
-</pre></div>
-</div>
-</div>
-</div>
-<p>When we use a function like this, we say we’re <strong>calling</strong> the function.
-An expression that calls a function is a <strong>function call</strong>.</p>
-<p>When you call a function, the parentheses are required.
-If you leave them out, you get an error message.</p>
+<p>Lè n ap itilize yon fonksyon tankou sa a, nou di ke nou <strong>ap rele</strong> fonksyon an.
+Yon ekspresyon ki rele yon fonksyon se yon <strong>apèl fonksyon</strong>.</p>
+<p>Lè ou rele yon fonksyon, parantèz yo obligatwa.
+Si ou kite yo deyò, ou pral resevwa yon mesaj erè.</p>
 <div class="cell tag_raises-exception docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">abs</span> <span class="mi">42</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">abs</span> <span class="mi">42</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output traceback highlight-ipythontb notranslate">
+      <div class="highlight">
+        <pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+            <span class="nb">abs</span> <span class="mi">42</span>
+                <span class="o">^</span>
+        <span class="ne">SyntaxError</span>: invalid syntax
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">17</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="nb">abs</span> <span class="mi">42</span>
-        <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<p>You can ignore the first line of this message; it doesn’t contain any information we need to understand right now.
-The second line is the code that contains the error, with a caret (<code class="docutils literal notranslate"><span class="pre">^</span></code>) beneath it to indicate where the error was discovered.</p>
-<p>The last line indicates that this is a <strong>syntax error</strong>, which means that there is something wrong with the structure of the expression.
-In this example, the problem is that a function call requires parentheses.</p>
-<p>Let’s see what happens if you leave out the parentheses <em>and</em> the value.</p>
+<p>Ou ka inyore premye liy mesaj sa a; li pa gen okenn enfòmasyon nou bezwen konprann kounye a. 
+Dezyèm liy la se kòd ki gen erè a, ak yon swiv (<code class="docutils literal notranslate"><span class="pre">^</span></code>) anba li pou endike kote erè a te jwenn.</p>
+<p>Dènye liy la endike ke sa se yon <strong>erè sintaks</strong>, ki vle di gen yon bagay ki pa kòrèk nan fòma ekspresyon an.
+Nan egzanp sa a, pwoblèm nan se ke yon apèl fonksyon an mande pou parantèz.</p>
+<p>Nou pral wè sa ki rive si ou kite parantèz yo <em>ak</em> valè a.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">abs</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">abs</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&lt;function abs(x, /)&gt;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function abs(x, /)&gt;
-</pre></div>
-</div>
-</div>
-</div>
-<p>A function name all by itself is a legal expression that has a value.
-When it’s displayed, the value indicates that <code class="docutils literal notranslate"><span class="pre">abs</span></code> is a function, and it includes some additional information I’ll explain later.</p>
+<p>Yon non fonksyon tout pou kont li se yon ekspresyon legal ki gen yon valè.
+Lè li montre, valè a endike ke <code class="docutils literal notranslate"><span class="pre">abs</span></code> se yon fonksyon, e li gen kèk enfòmasyon adisyonèl mwen pral eksplike pita.</p>
 </section>
 <section id="strings">
-<h2><span class="section-number">1.4. </span>Strings<a class="headerlink" href="#strings" title="Link to this heading">#</a></h2>
-<p>In addition to numbers, Python can also represent sequences of letters, which are called <strong>strings</strong> because the letters are strung together like beads on a necklace.
-To write a string, we can put a sequence of letters inside straight quotation marks.</p>
+  <h2><span class="section-number">1.4. </span>Fisel<a class="headerlink" href="#strings" title="Link to this heading">#</a></h2>
+<p>Anplis de nimewo yo, Python kapab reprezante tou sekans lèt yo, yo rele yo <strong>fisèl</strong> paske lèt yo mare ansanm tankou grenn sou yon kolye. Pou ekri yon fisèl, nou ka mete yon sekans lèt nan mak sitasyon dwat.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Hello&#39;</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s1">&#39;Alo&#39;</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&#39;Alo&#39;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Hello&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>It is also legal to use double quotation marks.</p>
+<p>Li legal tou pou itilize mak sitasyon doub.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;world&quot;</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s2">&quot;mond&quot;</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&#39;mond&#39;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;world&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>Double quotes make it easy to write a string that contains an apostrophe, which is the same symbol as a straight quote.</p>
+<p>Mak sitasyon doub fè li fasil pou ekri yon fisèl ki gen yon apostwòf, ki se menm senbòl ak yon mak sitasyon dwat.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;it&#39;s a small &quot;</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s2">&quot;Se yon ti &quot;</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&quot;Se yon ti &quot;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;it&#39;s a small &quot;
-</pre></div>
-</div>
-</div>
-</div>
-<p>Strings can also contain spaces, punctuation, and digits.</p>
+<p>Fisèl yo kapab gen espas, ponktiyasyon, ak chif tou.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Well, &#39;</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s1">&#39;Ebyen, &#39;</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&#39;Ebyen, &#39;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Well, &#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">+</span></code> operator works with strings; it joins two strings into a single string, which is called <strong>concatenation</strong></p>
+<p>Operatè <code class="docutils literal notranslate"><span class="pre">+</span></code> a travay ak fisèl; li mete ansanm de fisèl pou fè yon sèl fisèl, sa yo rele <strong>konkatenasyon</strong>.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Well, &#39;</span> <span class="o">+</span> <span class="s2">&quot;it&#39;s a small &quot;</span> <span class="o">+</span> <span class="s1">&#39;world.&#39;</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s1">&#39;Ebyen, &#39;</span> <span class="o">+</span> <span class="s2">&quot;se yon ti &quot;</span> <span class="o">+</span> <span class="s1">&#39;mond.&#39;</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&quot;Ebyen, se yon ti mond.&quot;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Well, it&#39;s a small world.&quot;
-</pre></div>
-</div>
-</div>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">*</span></code> operator also works with strings; it makes multiple copies of a string and concatenates them.</p>
+<p>Operatè <code class="docutils literal notranslate"><span class="pre">*</span></code> a travay tou ak fisèl; li fè plizyè kopi yon fisèl epi konkatene yo.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;Spam, &#39;</span> <span class="o">*</span> <span class="mi">4</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="s1">&#39;Spam, &#39;</span> <span class="o">*</span> <span class="mi">4</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>&#39;Spam, Spam, Spam, Spam, &#39;
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Spam, Spam, Spam, Spam, &#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>The other arithmetic operators don’t work with strings.</p>
-<p>Python provides a function called <code class="docutils literal notranslate"><span class="pre">len</span></code> that computes the length of a string.`</p>
+<p>Lòt operatè aritmetik yo pa travay ak fisèl.</p>
+<p>Python bay yon fonksyon ki rele <code class="docutils literal notranslate"><span class="pre">len</span></code> ki kalkile longè fisèl la.</p>
 <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;Spam&#39;</span><span class="p">)</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;Spam&#39;</span><span class="p">)</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output text_plain highlight-myst-ansi notranslate">
+      <div class="highlight">
+        <pre><span></span>4
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<p>Notice that <code class="docutils literal notranslate"><span class="pre">len</span></code> counts the letters between the quotes, but not the quotes.</p>
-<p>When you create a string, be sure to use straight quotes.
-The back quote, also known as a backtick, causes a syntax error.</p>
+<p>Remake ke <code class="docutils literal notranslate"><span class="pre">len</span></code> konte lèt yo ant mak sitasyon yo, men li pa konte mak sitasyon yo.</p>
+<p>Lè w ap kreye yon fisèl, asire w ke w itilize mak sitasyon dwat. Aksan grav lakòz yon erè sintaks.</p>
 <div class="cell tag_raises-exception docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="err">`</span><span class="n">Hello</span><span class="err">`</span>
-</pre></div>
+  <div class="cell_input docutils container">
+    <div class="highlight-ipython3 notranslate">
+      <div class="highlight">
+        <pre><span></span><span class="err">`</span><span class="n">Alo</span><span class="err">`</span>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="cell_output docutils container">
+    <div class="output traceback highlight-ipythontb notranslate">
+      <div class="highlight">
+        <pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">26</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+          <span class="err">`</span><span class="n">Alo</span><span class="err">`</span>
+          <span class="o">^</span>
+        <span class="ne">SyntaxError</span>: invalid syntax
+        </pre>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">26</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="err">`</span><span class="n">Hello</span><span class="err">`</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<p>Smart quotes, also known as curly quotes, are also illegal.</p>
+<p>Mak sitasyon entèlijan, ke yo rele tou mak sitasyon krole, yo ilegal tou.</p>
 </section>
 <section id="values-and-types">
-<h2><span class="section-number">1.5. </span>Values and types<a class="headerlink" href="#values-and-types" title="Link to this heading">#</a></h2>
-<p>So far we’ve seen three kinds of values:</p>
+<h2><span class="section-number">1.5. </span>Valè ak tip yo<a class="headerlink" href="#values-and-types" title="Link to this heading">#</a></h2>
+<p>Jiska kounye a, nou wè twa kalite valè:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code> is an integer,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">42.0</span></code> is a floating-point number, and</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">'Hello'</span></code> is a string.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code> se yon nimewo antye,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">42.0</span></code> se yon nimewo k ap flote, epi</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Alo'</span></code> se yon fisèl.</p></li>
 </ul>
-<p>A kind of value is called a <strong>type</strong>.
-Every value has a type – or we sometimes say it “belongs to” a type.</p>
-<p>Python provides a function called <code class="docutils literal notranslate"><span class="pre">type</span></code> that tells you the type of any value.
-The type of an integer is <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+<p>Yon kalite valè rele yon <strong>tip</strong>.
+Chak valè gen yon tip - oswa nou ka di li "fè pati nan" yon tip.</p>
+<p>Python ofri yon fonksyon ki rele <code class="docutils literal notranslate"><span class="pre">type</span></code> ki di w ki tip valè ou genyen.
+Tip yon nimewo antye se <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -806,7 +905,7 @@ The type of an integer is <code class="docutils literal notranslate"><span class
 </div>
 </div>
 </div>
-<p>The type of a floating-point number is <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
+<p>Tip yon nimewo k ap flote se <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mf">42.0</span><span class="p">)</span>
@@ -819,10 +918,10 @@ The type of an integer is <code class="docutils literal notranslate"><span class
 </div>
 </div>
 </div>
-<p>And the type of a string is <code class="docutils literal notranslate"><span class="pre">str</span></code>.</p>
+<p>Epi tip yon fisèl se <code class="docutils literal notranslate"><span class="pre">str</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;Alo, Mond!&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -832,8 +931,8 @@ The type of an integer is <code class="docutils literal notranslate"><span class
 </div>
 </div>
 </div>
-<p>The types <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, and <code class="docutils literal notranslate"><span class="pre">str</span></code> can be used as functions.
-For example, <code class="docutils literal notranslate"><span class="pre">int</span></code> can take a floating-point number and convert it to an integer (always rounding down).</p>
+<p>Tip yo <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, ak <code class="docutils literal notranslate"><span class="pre">str</span></code> ka itilize tankou fonksyon.
+Pou egzanp, <code class="docutils literal notranslate"><span class="pre">int</span></code> ka pran nimewo k ap flote epi konvèti li an yon nimewo antye (toujou awondi desann).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="mf">42.9</span><span class="p">)</span>
@@ -846,7 +945,7 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>And <code class="docutils literal notranslate"><span class="pre">float</span></code> can convert an integer to a floating-point value.</p>
+<p>Epi <code class="docutils literal notranslate"><span class="pre">float</span></code> ka konvèti yon nimewo antye an yon valè k ap flote.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -859,8 +958,8 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>Now, here’s something that can be confusing.
-What do you get if you put a sequence of digits in quotes?</p>
+<p>Kounye a, gen yon bagay ki ka konfizyon.
+Kisa ou jwenn si ou mete yon seri chif nan mak sitasyon?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;126&#39;</span>
@@ -873,7 +972,7 @@ What do you get if you put a sequence of digits in quotes?</p>
 </div>
 </div>
 </div>
-<p>It looks like a number, but it is actually a string.</p>
+<p>Li sanble yon nimewo, men an reyalite se yon fisèl.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;126&#39;</span><span class="p">)</span>
@@ -886,7 +985,7 @@ What do you get if you put a sequence of digits in quotes?</p>
 </div>
 </div>
 </div>
-<p>If you try to use it like a number, you might get an error.</p>
+<p>Si ou eseye itilize li tankou yon nimewo, ou ka resevwa yon erè.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;126&#39;</span> <span class="o">/</span> <span class="mi">3</span>
@@ -899,9 +998,9 @@ What do you get if you put a sequence of digits in quotes?</p>
 </div>
 </div>
 </div>
-<p>This example generates a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>, which means that the values in the expression, which are called <strong>operands</strong>, have the wrong type.
-The error message indicates that the <code class="docutils literal notranslate"><span class="pre">/</span></code> operator does not support the types of these values, which are <code class="docutils literal notranslate"><span class="pre">str</span></code> and <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
-<p>If you have a string that contains digits, you can use <code class="docutils literal notranslate"><span class="pre">int</span></code> to convert it to an integer.</p>
+<p>Nan egzanp sa a, gen yon <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>, sa vle di ke valè yo nan ekspresyon an, ki rele <strong>operan</strong>, gen yon move tip.
+Mesaj erè a endike ke operatè <code class="docutils literal notranslate"><span class="pre">/</span></code> a pa sipòte tip valè sa yo, ki se <code class="docutils literal notranslate"><span class="pre">str</span></code> ak <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+<p>Si ou gen yon fisèl ki gen chif, ou ka itilize <code class="docutils literal notranslate"><span class="pre">int</span></code> pou konvèti li nan yon nimewo antye.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;126&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
@@ -914,7 +1013,7 @@ The error message indicates that the <code class="docutils literal notranslate">
 </div>
 </div>
 </div>
-<p>If you have a string that contains digits and a decimal point, you can use <code class="docutils literal notranslate"><span class="pre">float</span></code> to convert it to a floating-point number.</p>
+<p>Si ou gen yon fisèl ki gen chif ak yon pwen desimal, ou ka sèvi ak <code class="docutils literal notranslate"><span class="pre">float</span></code> pou konvèti li nan yon nimewo k ap flote.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;12.6&#39;</span><span class="p">)</span>
@@ -927,9 +1026,8 @@ The error message indicates that the <code class="docutils literal notranslate">
 </div>
 </div>
 </div>
-<p>When you write a large integer, you might be tempted to use commas
-between groups of digits, as in <code class="docutils literal notranslate"><span class="pre">1,000,000</span></code>.
-This is a legal expression in Python, but the result is not an integer.</p>
+<p>Lè ou ekri yon nimewo gwo, ou ta ka santi w anvi mete vigil ant gwoup de chif, tankou nan <code class="docutils literal notranslate"><span class="pre">1,000,000</span></code>.
+Sa se yon ekspresyon legal nan Python, men rezilta a pa yon nimewo antye.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">,</span><span class="mi">000</span><span class="p">,</span><span class="mi">000</span>
@@ -942,9 +1040,9 @@ This is a legal expression in Python, but the result is not an integer.</p>
 </div>
 </div>
 </div>
-<p>Python interprets <code class="docutils literal notranslate"><span class="pre">1,000,000</span></code> as a comma-separated sequence of integers.
-We’ll learn more about this kind of sequence later.</p>
-<p>You can use underscores to make large numbers easier to read.</p>
+<p>Python entèprete <code class="docutils literal notranslate"><span class="pre">1,000,000</span></code> kòm yon seri nimewo kote yo separe pa vigil.
+Nou pral aprann plis sou kalite seri sa yo pita.</p>
+<p>Ou ka itilize tirèt ba pou fè nimewo gwo pi fasil pou li.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1_000_000</span>
@@ -959,120 +1057,105 @@ We’ll learn more about this kind of sequence later.</p>
 </div>
 </section>
 <section id="formal-and-natural-languages">
-<h2><span class="section-number">1.6. </span>Formal and natural languages<a class="headerlink" href="#formal-and-natural-languages" title="Link to this heading">#</a></h2>
-<p><strong>Natural languages</strong> are the languages people speak, like English, Spanish, and French. They were not designed by people; they evolved naturally.</p>
-<p><strong>Formal languages</strong> are languages that are designed by people for specific applications.
-For example, the notation that mathematicians use is a formal language that is particularly good at denoting relationships among numbers and symbols.
-Similarly, programming languages are formal languages that have been designed to express computations.</p>
-<p>Although formal and natural languages have some features in
-common there are important differences:</p>
+<h2><span class="section-number">1.6. </span>Lang natirèl ak lang fòmèl<a class="headerlink" href="#formal-and-natural-languages" title="Link to this heading">#</a></h2>
+<p><strong>Lang natirèl yo</strong> se lang moun pale, tankou Kreyol, Panyòl, ak Anglè. Yo pa te fèt pa moun; yo devlope natirèlman.</p>
+<p><strong>Lang fòmèl yo</strong> se lang ki fèt pa moun pou aplikasyon espesifik. Pa egzanp, notasyon ke matematisyen yo itilize se yon lang fòmèl ki bon pou endike relasyon ant nimewo ak senbòl yo.
+Menm jan an, langaj pwogramasyon yo se lang fòmèl ki fèt pou ekspwime kalkil.</p>
+<p>Byenke lang fòmèl ak lang natirèl yo gen kèk karakteristik an komen, gen diferans enpòtan:</p>
 <ul class="simple">
-<li><p>Ambiguity: Natural languages are full of ambiguity, which people deal with by
-using contextual clues and other information. Formal languages are
-designed to be nearly or completely unambiguous, which means that
-any program has exactly one meaning, regardless of context.</p></li>
-<li><p>Redundancy: In order to make up for ambiguity and reduce misunderstandings,
-natural languages use redundancy. As a result, they are
-often verbose. Formal languages are less redundant and more concise.</p></li>
-<li><p>Literalness: Natural languages are full of idiom and metaphor. Formal languages mean exactly what they say.</p></li>
+<li><p>Anbwiyite: Lang natirèl yo gen anpil anbwiyite, moun yo rezoud li lè yo itilize endis konteks ak lòt enfòmasyon. Lang fòmèl yo fèt pou preske oswa konplètman san anbwiyite, sa vle di ke nenpòt pwogram gen yon sèl siyifikasyon, kèlkeswa konteks la.</p></li>
+<li><p>Redondans: Pou konpanse pou anbwiyite ak diminye malantandi, lang natirèl yo itilize redondans. Kòm rezilta, yo souvan long. Lang fòmèl yo mwens redondan epi pi presi.</p></li>
+<li><p>Literalite: Lang natirèl yo plen ak idyòm ak metafò. Lang fòmèl yo vle di egzakteman sa yo di.</p></li>
 </ul>
-<p>Because we all grow up speaking natural languages, it is sometimes hard to adjust to formal languages.
-Formal languages are more dense than natural languages, so it takes longer to read them.
-Also, the structure is important, so it is not always best to read from top to bottom, left to right.
-Finally, the details matter. Small errors in spelling and
-punctuation, which you can get away with in natural languages, can make
-a big difference in a formal language.</p>
+<p>Piske nou tout grandi pale lang natirèl, pafwa li difisil pou nou adapte nou ak lang fòmèl yo.
+Lang fòmèl yo pi dans pase lang natirèl, kidonk li pran plis tan pou li yo.
+Epitou, estrikti a enpòtan, kidonk li pa toujou pi bon li soti nan tèt anba, oswa de gòch adwat.
+Finalman, detay yo gen enpòtans. Ti erè nan òtograf ak ponktiyasyon, ke ou ka pase inapèsi nan lang natirèl, ka fè yon gwo diferans nan yon lang fòmèl.</p>
 </section>
 <section id="debugging">
-<h2><span class="section-number">1.7. </span>Debugging<a class="headerlink" href="#debugging" title="Link to this heading">#</a></h2>
-<p>Programmers make mistakes. For whimsical reasons, programming errors are called <strong>bugs</strong> and the process of tracking them down is called <strong>debugging</strong>.</p>
-<p>Programming, and especially debugging, sometimes brings out strong emotions. If you are struggling with a difficult bug, you might feel angry, sad, or embarrassed.</p>
-<p>Preparing for these reactions might help you deal with them. One approach is to think of the computer as an employee with certain strengths, like speed and precision, and particular weaknesses, like lack of empathy and inability to grasp the big picture.</p>
-<p>Your job is to be a good manager: find ways to take advantage of the strengths and mitigate the weaknesses. And find ways to use your emotions to engage with the problem, without letting your reactions interfere with your ability to work effectively.</p>
-<p>Learning to debug can be frustrating, but it is a valuable skill that is useful for many activities beyond programming. At the end of each chapter there is a section, like this one, with my suggestions for debugging. I hope they help!</p>
+<h2><span class="section-number">1.7. </span>Debogaj<a class="headerlink" href="#debugging" title="Link to this heading">#</a></h2>
+<p>Pwogramè fè erè, epi yo rele erè sa yo <strong>pinèz</strong>. Pwosesis pou idantifye ak korije erè sa yo rele <strong>debogaj</strong>.</p>
+<p>Pwogramasyon, ak espesyalman debogaj, pafwa pwovoke emosyon fò. Si w ap lite ak yon pinèz difisil, ou ka santi w fache, tris, oswa jennen.</p>
+<p>Prepare pou reyaksyon sa yo ka ede w fè fas ak yo. Yon apwòch se panse a òdinatè a kòm yon anplwaye ki gen fòs, tankou vitès ak presizyon, men ki gen feblès patikilye tankou mank de senpati ak enkapasite pou konpreann yon pwoblèm lajè.</p>
+<p>Travay ou se pou w yon bon manadjè: jwenn fason pou pran avantaj de fòs yo ak diminye feblès yo. Epi sèvi ak emosyon ou pou angaje ak pwoblèm nan, san w pa kite reyaksyon ou entèfere ak kapasite w pou w travay efektivman.</p>
+<p>Aprann debogaj ka fwistre, men li se yon konpetans ki gen anpil valè, ki itil nan anpil lòt aktivite apa de pwogramasyon. Nan fen chak chapit, gen yon seksyon ak sijesyon debogaj mwen. Mwen espere yo ede w!</p>
 </section>
 <section id="glossary">
-<h2><span class="section-number">1.8. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
-<p><strong>arithmetic operator:</strong>
-A symbol, like <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span></code>, that denotes an arithmetic operation like addition or multiplication.</p>
-<p><strong>integer:</strong>
-A type that represents whole numbers.</p>
-<p><strong>floating-point:</strong>
-A type that represents numbers with fractional parts.</p>
-<p><strong>integer division:</strong>
-An operator, <code class="docutils literal notranslate"><span class="pre">//</span></code>, that divides two numbers and rounds down to an integer.</p>
-<p><strong>expression:</strong>
-A combination of variables, values, and operators.</p>
-<p><strong>value:</strong>
-An integer, floating-point number, or string – or one of other kinds of values we will see later.</p>
-<p><strong>function:</strong>
-A named sequence of statements that performs some useful operation.
-Functions may or may not take arguments and may or may not produce a result.</p>
-<p><strong>function call:</strong>
-An expression – or part of an expression – that runs a function.
-It consists of the function name followed by an argument list in parentheses.</p>
-<p><strong>syntax error:</strong>
-An error in a program that makes it impossible to parse – and therefore impossible to run.</p>
-<p><strong>string:</strong>
-A type that represents sequences of characters.</p>
-<p><strong>concatenation:</strong>
-Joining two strings end-to-end.</p>
-<p><strong>type:</strong>
-A category of values.
-The types we have seen so far are integers (type <code class="docutils literal notranslate"><span class="pre">int</span></code>), floating-point numbers (type <code class="docutils literal notranslate"> <span class="pre">float</span></code>), and strings (type <code class="docutils literal notranslate"><span class="pre">str</span></code>).</p>
-<p><strong>operand:</strong>
-One of the values on which an operator operates.</p>
-<p><strong>natural language:</strong>
-Any of the languages that people speak that evolved naturally.</p>
-<p><strong>formal language:</strong>
-Any of the languages that people have designed for specific purposes, such as representing mathematical ideas or computer programs.
-All programming languages are formal languages.</p>
-<p><strong>bug:</strong>
-An error in a program.</p>
-<p><strong>debugging:</strong>
-The process of finding and correcting errors.</p>
+<h2><span class="section-number">1.8. </span>Glosè<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
+<p><strong>operatè aritmetik:</strong>
+Yon senbòl, tankou <code class="docutils literal notranslate"><span class="pre">+</span></code> ak <code class="docutils literal notranslate"><span class="pre">*</span></code>, ki endike yon operasyon aritmetik tankou adisyon oswa miltiplikasyon.</p>
+<p><strong>nimewo antye:</strong>
+Yon kalite ki reprezante nimewo san pati fraksyon oswa desimal.</p>
+<p><strong>nimewo k ap flote:</strong>
+Yon kalite ki reprezante nimewo ki gen pati fraksyonè.</p>
+<p><strong>divizyon antye:</strong>
+Yon operatè, <code class="docutils literal notranslate"><span class="pre">//</span></code>, ki divize de nimewo epi awondi desann pou fè yon nimewo antye.</p>
+<p><strong>ekspresyon:</strong>
+Yon konbinezon varyab, valè, ak operatè.</p>
+<p><strong>valè:</strong>
+Yon nimewo antye, nimewo k ap flote, oswa fisèl -- oswa yon lòt kalite valè nou pral wè pita.</p>
+<p><strong>fonksyon:</strong>
+Yon sekans deklarasyon ki gen yon non ki fè yon operasyon itil. Fonksyon yo ka pran oswa ka pa pran agiman, epi yo ka pwodwi oswa ka pa pwodwi yon rezilta.</p>
+<p><strong>apèl fonksyon:</strong>
+Yon ekspresyon -- oswa yon pati nan yon ekspresyon -- ki kouri yon fonksyon. Li konsiste de non fonksyon ki swiv pa yon lis agiman nan parantèz.</p>
+<p><strong>erè sentaks:</strong>
+Yon erè nan yon pwogram ki fè li enposib pou parse li -- kidonk li enposib pou kouri li.</p>
+<p><strong>fisèl:</strong>
+Yon kalite ki reprezante sekans karaktè.</p>
+<p><strong>konkatenasyon:</strong>
+Rantre de fisèl fen-a-fen.</p>
+<p><strong>tip:</strong>
+Yon kategori valè. Kalite nou te wè yo se nimewo antye (tip <code class="docutils literal notranslate"><span class="pre">int</span></code>), nimewo k ap flote (tip <code class="docutils literal notranslate"><span class="pre">float</span></code>), ak fisèl (tip <code class="docutils literal notranslate"><span class="pre">str</span></code>).</p>
+<p><strong>operan:</strong>
+Youn nan valè yo ke yon operatè opere sou li.</p>
+<p><strong>lang natirèl:</strong>
+Nenpòt lang moun pale ki devlope natirèlman.</p>
+<p><strong>lang fòmèl:</strong>
+Nenpòt lang ke moun yo fè pou rezon espesifik, tankou reprezante lide matematik oswa pwogram òdinatè. Tout langaj pwogramasyon yo se lang fòmèl.</p>
+<p><strong>pinèz:</strong>
+Yon erè nan yon pwogram.</p>
+<p><strong>debogaj:</strong>
+Pwosesis pou jwenn ak korije erè yo.</p>
 </section>
 <section id="exercises">
-<h2><span class="section-number">1.9. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.9. </span>Egzèsis<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-print tag_keep docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This cell tells Jupyter to provide detailed debugging information</span>
-<span class="c1"># when a runtime error occurs. Run it before working on the exercises.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Selil sa a di Jupyter pou bay enfòmasyon detaye sou debogaj lè gen yon erè pandan ekzekisyon.</span>
+<span class="c1"># Kouri li anvan ou travay sou egzèsis yo.</span>
 
 <span class="o">%</span><span class="k">xmode</span> Verbose
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Exception reporting mode: Verbose
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mod debogaj aktif: Verbose
 </pre></div>
 </div>
 </div>
 </div>
 <section id="ask-a-virtual-assistant">
-<h3><span class="section-number">1.9.1. </span>Ask a virtual assistant<a class="headerlink" href="#ask-a-virtual-assistant" title="Link to this heading">#</a></h3>
-<p>As you work through this book, there are several ways you can use a virtual assistant or chatbot to help you learn.</p>
+<h3><span class="section-number">1.9.1. </span>Mande yon asistan vityèl<a class="headerlink" href="#ask-a-virtual-assistant" title="Link to this heading">#</a></h3>
+<p>Kòm ou travay nan liv sa a, gen plizyè fason ou ka itilize yon asistan vityèl oswa chatbot pou ede ou aprann.</p>
 <ul class="simple">
-<li><p>If you want to learn more about a topic in the chapter, or anything is unclear, you can ask for an explanation.</p></li>
-<li><p>If you are having a hard time with any of the exercises, you can ask for help.</p></li>
+<li><p>Si w vle aprann plis sou yon sijè nan chapit la, oswa nenpòt bagay ki pa klè, ou ka mande pou yon esplikasyon.</p></li>
+<li><p>Si w gen difikilte ak nenpòt nan egzèsis yo, ou ka mande pou èd.</p></li>
 </ul>
-<p>In each chapter, I’ll suggest exercises you can do with a virtual assistant, but I encourage you to try things on your own and see what works for you.</p>
-<p>Here are some topics you could ask a virtual assistant about:</p>
+<p>Nan chak chapit, mwen pral sijere egzèsis ou ka fè ak yon asistan vityèl, men mwen ankouraje ou eseye bagay yo pou kont ou epi wè sa ki mache pou ou.</p>
+<p>Men kèk sijè ou ka mande yon asistan vityèl sou yo:</p>
 <ul class="simple">
-<li><p>Earlier I mentioned bitwise operators but I didn’t explain why the value of <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">^</span> <span class="pre">2</span></code> is 5. Try asking “What are the bitwise operators in Python?” or “What is the value of <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">XOR</span> <span class="pre">2</span></code>?”</p></li>
-<li><p>I also mentioned the order of operations. For more details, ask “What is the order of operations in Python?”</p></li>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">round</span></code> function, which we used to round a floating-point number to the nearest whole number, can take a second argument. Try asking “What are the arguments of the round function?” or “How do I round pi off to three decimal places?”</p></li>
-<li><p>There’s one more arithmetic operator I didn’t mention; try asking “What is the modulus operator in Python?”</p></li>
+<li><p>Pi bonè mwen te mansyone operatè bitwise, men mwen pa t eksplike poukisa valè <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">^</span> <span class="pre">2</span></code> se 5. Eseye mande "Ki operatè bitwise yo nan Python?" oswa "Ki valè <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">XOR</span> <span class="pre">2</span></code>?"</p></li>
+<li><p>Mwen te pale de lòd operasyon yo. Pou plis detay, mande "Ki lòd operasyon yo nan Python?"</p></li>
+<li><p>Fonksyon <code class="docutils literal notranslate"><span class="pre">round</span></code>, ke nou itilize pou awondi yon nimewo k ap flote nan nimewo antye ki pi pre, ka pran yon dezyèm agiman. Eseye mande "Ki agiman fonksyon <code class="docutils literal notranslate"><span class="pre">round</span></code> la genyen?" oswa "Kouman pou mwen awondi pi a nan twa desimal?"</p></li>
+<li><p>Gen yon sèl operatè aritmetik mwen pa t mansyone; eseye mande "Ki sa operatè modilè a nan Python?"</p></li>
 </ul>
-<p>Most virtual assistants know about Python, so they answer questions like this pretty reliably.
-But remember that these tools make mistakes.
-If you get code from a chatbot, test it!</p>
+<p>Pifò asistan vityèl konnen sou Python, kidonk yo reponn kesyon sa yo byen. Men, sonje zouti sa yo fè erè. Si ou jwenn kòd nan yon chatbot, teste li!</p>
 </section>
 <section id="exercise">
-<h3><span class="section-number">1.9.2. </span>Exercise<a class="headerlink" href="#exercise" title="Link to this heading">#</a></h3>
-<p>You might wonder what <code class="docutils literal notranslate"><span class="pre">round</span></code> does if a number ends in <code class="docutils literal notranslate"><span class="pre">0.5</span></code>.
-The answer is that it sometimes rounds up and sometimes rounds down.
-Try these examples and see if you can figure out what rule it follows.</p>
+<h3><span class="section-number">1.9.2. </span>Egzèsis<a class="headerlink" href="#exercise" title="Link to this heading">#</a></h3>
+<p>Ou ta ka mande tèt ou ki sa <code class="docutils literal notranslate"><span class="pre">round</span></code> fè lè yon nimewo fini ak <code class="docutils literal notranslate"><span class="pre">0.5</span></code>.
+Repons lan se ke pafwa li awondi moute epi pafwa li awondi desann.
+Eseye egzanp sa yo epi gade si ou kapab konprann ki règ li swiv.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">42.5</span><span class="p">)</span>
@@ -1097,23 +1180,23 @@ Try these examples and see if you can figure out what rule it follows.</p>
 </div>
 </div>
 </div>
-<p>If you are curious, ask a virtual assistant, “If a number ends in 0.5, does Python round up or down?”</p>
+<p>Si w enterese, mande yon asistan vityèl, "Si yon nimewo fini nan 0.5, èske Python awondi moute oswa desann?"</p>
 </section>
 <section id="id1">
-<h3><span class="section-number">1.9.3. </span>Exercise<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>When you learn about a new feature, you should try it out and make mistakes on purpose.
-That way, you learn the error messages, and when you see them again, you will know what they mean.
-It is better to make mistakes now and deliberately than later and accidentally.</p>
+<h3><span class="section-number">1.9.3. </span>Egzèsis<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Lè w ap aprann sou yon karakteristik nouvo, ou ta dwe eseye li epi fè erè sou entansyon.
+Konsa, ou aprann mesaj erè yo, epi lè ou wè yo ankò, ou pral konnen sa yo vle di.
+Li pi bon fè erè kounye a sou entansyon pase pita pa aksidan.</p>
 <ol class="arabic simple">
-<li><p>You can use a minus sign to make a negative number like <code class="docutils literal notranslate"><span class="pre">-2</span></code>. What happens if you put a plus sign before a number? What about <code class="docutils literal notranslate"><span class="pre">2++2</span></code>?</p></li>
-<li><p>What happens if you have two values with no operator between them, like <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">2</span></code>?</p></li>
-<li><p>If you call a function like <code class="docutils literal notranslate"><span class="pre">round(42.5)</span></code>, what happens if you leave out one or both parentheses?</p></li>
+<li><p>Ou ka itilize yon siy mwens pou fè yon nimewo negatif tankou <code class="docutils literal notranslate"><span class="pre">-2</span></code>. Kisa k ap pase si ou mete yon siy plis anvan yon nimewo? E kisa ki pase ak <code class="docutils literal notranslate"><span class="pre">2++2</span></code>?</p></li>
+<li><p>Kisa k ap pase si ou gen de valè san okenn operatè ant yo, tankou <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">2</span></code>?</p></li>
+<li><p>Si ou rele yon fonksyon tankou <code class="docutils literal notranslate"><span class="pre">round(42.5)</span></code>, kisa k ap pase si ou pa mete youn oswa tou de parantèz?</p></li>
 </ol>
 </section>
 <section id="id2">
-<h3><span class="section-number">1.9.4. </span>Exercise<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>Recall that every expression has a value, every value has a type, and we can use the <code class="docutils literal notranslate"><span class="pre">type</span></code> function to find the type of any value.</p>
-<p>What is the type of the value of the following expressions? Make your best guess for each one, and then use <code class="docutils literal notranslate"><span class="pre">type</span></code> to find out.</p>
+<h3><span class="section-number">1.9.4. </span>Egzèsis<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Sonje ke chak ekspresyon gen yon valè, chak valè gen yon tip, epi nou ka itilize fonksyon <code class="docutils literal notranslate"><span class="pre">type</span></code> pou chèche konnen tip nenpòt valè.</p>
+<p>Ki tip valè ekspresyon sa yo genyen? Fè pi bon devinaj ou pou chak youn, epi apre sa itilize <code class="docutils literal notranslate"><span class="pre">type</span></code> pou chèche konnen repons lan.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">765</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">2.718</span></code></p></li>
@@ -1126,21 +1209,21 @@ It is better to make mistakes now and deliberately than later and accidentally.<
 </ul>
 </section>
 <section id="id3">
-<h3><span class="section-number">1.9.5. </span>Exercise<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>The following questions give you a chance to practice writing arithmetic expressions.</p>
+<h3><span class="section-number">1.9.5. </span>Egzèsis<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Kesyon ki vin apre yo ap ba ou yon chans pou pratike ekri ekspresyon aritmetik.</p>
 <ol class="arabic simple">
-<li><p>How many seconds are there in 42 minutes 42 seconds?</p></li>
-<li><p>How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers in a mile.</p></li>
-<li><p>If you run a 10 kilometer race in 42 minutes 42 seconds, what is your average pace in seconds per mile?</p></li>
-<li><p>What is your average pace in minutes and seconds per mile?</p></li>
-<li><p>What is your average speed in miles per hour?</p></li>
+<li><p>Konbyen segond ki genyen nan 42 minit 42 segond?</p></li>
+<li><p>Konbyen milye ki genyen nan 10 kilomèt? Konsèy: Gen 1.61 kilomèt nan yon milye.</p></li>
+<li><p>Si ou kouri yon kous 10 kilomèt nan 42 minit 42 segond, ki mwayèn ou nan segond pa milye?</p></li>
+<li><p>Ki kote mwayèn ou nan minit ak segond pa milye?</p></li>
+<li><p>Ki vitès mwayèn ou nan milye pa èdtan?</p></li>
 </ol>
-<p>If you already know about variables, you can use them for this exercise.
-If you don’t, you can do the exercise without them – and then we’ll see them in the next chapter.</p>
+<p>Si ou deja konnen sou varyab, ou ka itilize yo pou egzèsis sa a. Si ou pa konnen yo, ou ka fè egzèsis la san yo — epi nou pral aprann sou yo nan pwochen chapit la.</p>
 <p><a class="reference external" href="https://allendowney.github.io/ThinkPython/index.html">Think Python: 3rd Edition</a></p>
 <p>Copyright 2024 <a class="reference external" href="https://allendowney.com">Allen B. Downey</a></p>
-<p>Code license: <a class="reference external" href="https://mit-license.org/">MIT License</a></p>
-<p>Text license: <a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a></p>
+<p>Tradui pa <a class="reference external" href="https://x.com/JoshBouzy">Josh Bouzy</a></p>
+<p>Lisans Kòd: <a class="reference external" href="https://mit-license.org/">MIT License</a></p>
+<p>Lisans Tèks: <a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a></p>
 </section>
 </section>
 </section>
@@ -1209,20 +1292,20 @@ If you don’t, you can do the exercise without them – and then we’ll see th
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operators">1.1. Arithmetic operators</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expressions">1.2. Expressions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-functions">1.3. Arithmetic functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">1.4. Strings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-and-types">1.5. Values and types</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formal-and-natural-languages">1.6. Formal and natural languages</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging">1.7. Debugging</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">1.8. Glossary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">1.9. Exercises</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-a-virtual-assistant">1.9.1. Ask a virtual assistant</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">1.9.2. Exercise</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.9.3. Exercise</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.9.4. Exercise</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.9.5. Exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-operators">1.1. Operatè Aritmetik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expressions">1.2. Ekspresyon</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-functions">1.3. Fonksyon Aritmètik</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">1.4. Fisel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#values-and-types">1.5. Valè ak tip yo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#formal-and-natural-languages">1.6. Lang natirèl ak lang fòmèl</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging">1.7. Debogaj</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">1.8. Glosè</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">1.9. Egzèsis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-a-virtual-assistant">1.9.1. Mande yon asistan vityèl</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise">1.9.2. Egzèsis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.9.3. Egzèsis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1.9.4. Egzèsis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1.9.5. Egzèsis</a></li>
 </ul>
 </li>
 </ul>
