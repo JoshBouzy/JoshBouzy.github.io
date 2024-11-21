@@ -394,18 +394,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>You can order print and ebook versions of <em>Think Python 3e</em> from
-<a class="reference external" href="https://bookshop.org/a/98697/9781098155438">Bookshop.org</a> and
+                  <p>Ou ka kòmande vèsyon enprime ak ebook nan <em>Think Python 3e</em> sou
+<a class="reference external" href="https://bookshop.org/a/98697/9781098155438">Bookshop.org</a> ak
 <a class="reference external" href="https://www.amazon.com/_/dp/1098155432?smid=ATVPDKIKX0DER&amp;amp;_encoding=UTF8&amp;amp;tag=oreilly20-20&amp;amp;_encoding=UTF8&amp;amp;tag=greenteapre01-20&amp;amp;linkCode=ur2&amp;amp;linkId=e2a529f94920295d27ec8a06e757dc7c&amp;amp;camp=1789&amp;amp;creative=9325">Amazon</a>.</p>
 <section id="variables-and-statements">
-<h1><span class="section-number">2. </span>Variables and Statements<a class="headerlink" href="#variables-and-statements" title="Link to this heading">#</a></h1>
-<p>In the previous chapter, we used operators to write expressions that perform arithmetic computations.</p>
-<p>In this chapter, you’ll learn about variables and statements, the <code class="docutils literal notranslate"><span class="pre">import</span></code> statement, and the <code class="docutils literal notranslate"><span class="pre">print</span></code> function.
-And I’ll introduce more of the vocabulary we use to talk about programs, including “argument” and “module”.</p>
+<h1><span class="section-number">2. </span>Varyab ak Deklarasyon<a class="headerlink" href="#variables-and-statements" title="Link to this heading">#</a></h1>
+<p>Nan chapit anvan an, nou te itilize operatè pou ekri ekspresyon ki fè kalkil aritmetik.</p>
+<p>Nan chapit sa a, w ap aprann sou varyab ak deklarasyon, deklarasyon <code class="docutils literal notranslate"><span class="pre">import</span></code>, ak fonksyon <code class="docutils literal notranslate"><span class="pre">print</span></code>.
+M ap prezante tou plis vokabilè nou itilize pou pale de pwogram, tankou "agiman" ak "modil."</p>
 <section id="variables">
-<h2><span class="section-number">2.1. </span>Variables<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
-<p>A <strong>variable</strong> is a name that refers to a value.
-To create a variable, we can write a <strong>assignment statement</strong> like this.</p>
+<h2><span class="section-number">2.1. </span>Varyab<a class="headerlink" href="#variables" title="Link to this heading">#</a></h2>
+<p>Yon <strong>varyab</strong> se yon non ki reprezante yon valè.
+Pou kreye yon varyab, nou ka ekri yon <strong>deklarasyon asiyasyon</strong> konsa:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">17</span>
@@ -413,9 +413,9 @@ To create a variable, we can write a <strong>assignment statement</strong> like 
 </div>
 </div>
 </div>
-<p>An assignment statement has three parts: the name of the variable on the left, the equals operator, <code class="docutils literal notranslate"><span class="pre">=</span></code>, and an expression on the right.
-In this example, the expression is an integer.
-In the following example, the expression is a floating-point number.</p>
+<p>Yon deklarasyon asiyasyon gen twa pati: non varyab la sou bò gòch la, operatè egal, <code class="docutils literal notranslate"><span class="pre">=</span></code>, ak yon ekspresyon sou bò dwat la.
+Nan egzanp sa a, ekspresyon an se yon nimewo antye.
+Nan egzanp ki vin apre a, ekspresyon an se yon nimewo k ap flote:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
@@ -423,31 +423,31 @@ In the following example, the expression is a floating-point number.</p>
 </div>
 </div>
 </div>
-<p>And in the following example, the expression is a string.</p>
+<p>Epi nan egzanp ki vin apre a, ekspresyon an se yon fisèl:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s1">&#39;And now for something completely different&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mesaj</span> <span class="o">=</span> <span class="s1">&#39;Epi kounya pou yon bagay konplètman diferan&#39;</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>When you run an assignment statement, there is no output.
-Python creates the variable and gives it a value, but the assignment statement has no visible effect.
-However, after creating a variable, you can use it as an expression.
-So we can display the value of <code class="docutils literal notranslate"><span class="pre">message</span></code> like this:</p>
+<p>Lè w kouri yon deklarasyon asiyasyon, pa gen okenn pwodiksyon.
+Python kreye varyab la epi li bay li yon valè, men deklarasyon asiyasyon an pa gen okenn efè vizib.
+Sepandan, apre ou fin kreye yon varyab, ou ka itilize li kòm yon ekspresyon.
+Konsa nou ka montre valè <code class="docutils literal notranslate"><span class="pre">mesaj</span></code> konsa:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">message</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mesaj</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;And now for something completely different&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Epi kounya pou yon bagay konplètman diferan&#39;
 </pre></div>
 </div>
 </div>
 </div>
-<p>You can also use a variable as part of an expression with arithmetic operators.</p>
+<p>Ou kapab itilize tou yon varyab kòm yon pati nan yon ekspresyon avèk operatè aritmetik:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">+</span> <span class="mi">25</span>
@@ -472,7 +472,7 @@ So we can display the value of <code class="docutils literal notranslate"><span 
 </div>
 </div>
 </div>
-<p>And you can use a variable when you call a function.</p>
+<p>Epi ou ka itilize yon varyab lè w ap rele yon fonksyon:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
@@ -487,7 +487,7 @@ So we can display the value of <code class="docutils literal notranslate"><span 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">mesaj</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -499,25 +499,22 @@ So we can display the value of <code class="docutils literal notranslate"><span 
 </div>
 </section>
 <section id="state-diagrams">
-<h2><span class="section-number">2.2. </span>State diagrams<a class="headerlink" href="#state-diagrams" title="Link to this heading">#</a></h2>
-<p>A common way to represent variables on paper is to write the name with
-an arrow pointing to its value.</p>
+<h2><span class="section-number">2.2. </span>Dyagram Eta<a class="headerlink" href="#state-diagrams" title="Link to this heading">#</a></h2>
+<p>Yon fason komen pou reprezante varyab sou papye se pou ekri non an avèk yon flèch ki montre valè li.</p>
 <div class="cell tag_remove-input tag_keep docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/54319c437cca81caa5fa9ee52a1edfb01810e693b7ebd67c56de713f1d132655.png" src="_images/54319c437cca81caa5fa9ee52a1edfb01810e693b7ebd67c56de713f1d132655.png" />
 </div>
 </div>
-<p>This kind of figure is called a <strong>state diagram</strong> because it shows what state each of the variables is in (think of it as the variable’s state of mind).
-We’ll use state diagrams throughout the book to represent a model of how Python stores variables and their values.</p>
+<p>Kalite figi sa yo rele yon <strong>dyagram eta</strong> paske yo montre nan ki eta chak varyab ye (panse a li tankou eta panse varyab la). Nou pral itilize dyagram eta atravè tout liv la pou reprezante yon modèl de fason Python estoke varyab ak valè yo.</p>
 </section>
 <section id="variable-names">
-<h2><span class="section-number">2.3. </span>Variable names<a class="headerlink" href="#variable-names" title="Link to this heading">#</a></h2>
-<p>Variable names can be as long as you like. They can contain both letters and numbers, but they can’t begin with a number.
-It is legal to use uppercase letters, but it is conventional to use only lower case for
-variable names.</p>
-<p>The only punctuation that can appear in a variable name is the underscore character, <code class="docutils literal notranslate"><span class="pre">_</span></code>. It is often used in names with multiple words, such as <code class="docutils literal notranslate"><span class="pre">your_name</span></code> or  <code class="docutils literal notranslate"><span class="pre">airspeed_of_unladen_swallow</span></code>.</p>
-<p>If you give a variable an illegal name, you get a syntax error.
-The name <code class="docutils literal notranslate"><span class="pre">million!</span></code> is illegal because it contains punctuation.</p>
+<h2><span class="section-number">2.3. </span>Non Varyab<a class="headerlink" href="#variable-names" title="Link to this heading">#</a></h2>
+<p>Non varyab yo ka long otan ou vle. Yo ka gen lèt ak chif, men yo pa ka kòmanse ak yon chif.
+Li legal pou itilize lèt majiskil, men li se yon konvansyon pou itilize sèlman lèt miniskil pou non varyab yo.</p>
+<p>Sèl ponktiyasyon ki ka parèt nan yon non varyab se karaktè anba liy lan, <code>_</code>. Yo souvan itilize li nan non ki gen plizyè mo, tankou <code>non_ou</code> oswa <code>vites_yon_wazo_san_chaj</code>.</p>
+<p>Si ou bay yon varyab yon non ilegal, w ap jwenn yon erè sentaks.
+Non <code>million!</code> ilegal paske li gen ponktiyasyon.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">million</span><span class="o">!</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000000</span>
@@ -533,58 +530,56 @@ The name <code class="docutils literal notranslate"><span class="pre">million!</
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">76trombones</span></code> is illegal because it starts with a number.</p>
+<p><code class="docutils literal notranslate"><span class="pre">76trombones</span></code> ilegal paske li kòmanse ak yon chif.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">76</span><span class="n">trombones</span> <span class="o">=</span> <span class="s1">&#39;big parade&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">76</span><span class="n">trombones</span> <span class="o">=</span> <span class="s1">&#39;gwo parad&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="g g-Whitespace">    </span><span class="mi">76</span><span class="n">trombones</span> <span class="o">=</span> <span class="s1">&#39;big parade&#39;</span>
+<span class="g g-Whitespace">    </span><span class="mi">76</span><span class="n">trombones</span> <span class="o">=</span> <span class="s1">&#39;gwo parad&#39;</span>
      <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid decimal literal
 </pre></div>
 </div>
 </div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">class</span></code> is also illegal, but it might not be obvious why.</p>
+<p><code class="docutils literal notranslate"><span class="pre">class</span></code> tou ilegal, men sa ka pa klè poukisa.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="err">= &#39;</span><span class="nc">Self</span><span class="o">-</span><span class="n">Defence</span> <span class="n">Against</span> <span class="n">Fresh</span> <span class="n">Fruit</span><span class="s1">&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="err">= &#39;</span><span class="nc">Defans Kont Fwi Fre</span><span class="s1">&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="k">class</span> <span class="err">= &#39;</span><span class="nc">Self</span><span class="o">-</span><span class="n">Defence</span> <span class="n">Against</span> <span class="n">Fresh</span> <span class="n">Fruit</span><span class="s1">&#39;</span>
+    <span class="k">class</span> <span class="err">= &#39;</span><span class="nc">Defans Kont Fwi Fre</span><span class="s1">&#39;</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
 </div>
-<p>It turns out that <code class="docutils literal notranslate"><span class="pre">class</span></code> is a <strong>keyword</strong>, which is a special word used to specify the structure of a program.
-Keywords can’t be used as variable names.</p>
-<p>Here’s a complete list of Python’s keywords:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>      <span class="k">await</span>      <span class="k">else</span>       <span class="kn">import</span>     <span class="nn">pass</span>
+<p>Li vin klè ke <code class="docutils literal notranslate"><span class="pre">class</span></code> se yon <strong>mo kle</strong>, ki se yon mo espesyal ki itilize pou presize estrikti yon pwogram.
+Mo kle yo pa ka itilize kòm non varyab.</p>
+<p>Men yon lis konplè mo kle Python yo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>      <span class="k">await</span>      <span class="k">else</span>       <span class="kn">import</span>     <span class="k">pass</span>
 <span class="kc">None</span>       <span class="k">break</span>      <span class="k">except</span>     <span class="ow">in</span>         <span class="k">raise</span>
-<span class="kc">True</span>       <span class="k">class</span>      <span class="nc">finally</span>    <span class="ow">is</span>         <span class="k">return</span>
+<span class="kc">True</span>       <span class="k">class</span>      <span class="k">finally</span>    <span class="ow">is</span>         <span class="k">return</span>
 <span class="ow">and</span>        <span class="k">continue</span>   <span class="k">for</span>        <span class="k">lambda</span>     <span class="k">try</span>
-<span class="k">as</span>         <span class="k">def</span>        <span class="nf">from</span>       <span class="k">nonlocal</span>   <span class="k">while</span>
+<span class="k">as</span>         <span class="k">def</span>        <span class="k">from</span>       <span class="k">nonlocal</span>   <span class="k">while</span>
 <span class="k">assert</span>     <span class="k">del</span>        <span class="k">global</span>     <span class="ow">not</span>        <span class="k">with</span>
 <span class="k">async</span>      <span class="k">elif</span>       <span class="k">if</span>         <span class="ow">or</span>         <span class="k">yield</span>
 </pre></div>
 </div>
-<p>You don’t have to memorize this list. In most development environments,
-keywords are displayed in a different color; if you try to use one as a
-variable name, you’ll know.</p>
+<p>Ou pa bezwen memorize lis sa a. Nan pifò anviwònman devlopman yo, mo kle yo montre ak yon koulè diferan; si ou eseye itilize youn kòm non varyab, ou pral konnen.</p>
 </section>
 <section id="the-import-statement">
-<h2><span class="section-number">2.4. </span>The import statement<a class="headerlink" href="#the-import-statement" title="Link to this heading">#</a></h2>
-<p>In order to use some Python features, you have to <strong>import</strong> them.
-For example, the following statement imports the <code class="docutils literal notranslate"><span class="pre">math</span></code> module.</p>
+<h2><span class="section-number">2.4. </span>Deklarasyon import<a class="headerlink" href="#the-import-statement" title="Link to this heading">#</a></h2>
+<p>Pou ou ka itilize kèk karakteristik Python, ou dwe <strong>enpòte</strong> yo.
+Pa egzanp, deklarasyon sa a enpòte modil <code class="docutils literal notranslate"><span class="pre">math</span></code> la.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -592,9 +587,7 @@ For example, the following statement imports the <code class="docutils literal n
 </div>
 </div>
 </div>
-<p>A <strong>module</strong> is a collection of variables and functions.
-The math module provides a variable called <code class="docutils literal notranslate"><span class="pre">pi</span></code> that contains the value of the mathematical constant denoted <span class="math notranslate nohighlight">\(\pi\)</span>.
-We can display its value like this.</p>
+<p>Yon <strong>modil</strong> se yon koleksyon varyab ak fonksyon. Modil <code>math</code> la bay yon varyab ki rele <code>pi</code> ki gen valè konstan matematik ki reprezante <span class="math notranslate nohighlight">\(\pi\)</span>. Nou ka montre valè li konsa.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">pi</span>
@@ -607,9 +600,8 @@ We can display its value like this.</p>
 </div>
 </div>
 </div>
-<p>To use a variable in a module, you have to use the <strong>dot operator</strong> (<code class="docutils literal notranslate"><span class="pre">.</span></code>) between the name of the module and the name of the variable.</p>
-<p>The math module also contains functions.
-For example, <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> computes square roots.</p>
+<p>Pou itilize yon varyab nan yon modil, ou dwe itilize <strong>operatè pwen</strong> (<code>.</code>) ant non modil la ak non varyab la.</p>
+<p>Modil math la gen fonksyon tou. Pa egzanp, <code>sqrt</code> kalkile rasin kare.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
@@ -622,7 +614,7 @@ For example, <code class="docutils literal notranslate"><span class="pre">sqrt</
 </div>
 </div>
 </div>
-<p>And <code class="docutils literal notranslate"><span class="pre">pow</span></code> raises one number to the power of a second number.</p>
+<p>Epi <code>pow</code> ogmante yon nimewo nan pouvwa yon lòt nimewo.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -635,16 +627,11 @@ For example, <code class="docutils literal notranslate"><span class="pre">sqrt</
 </div>
 </div>
 </div>
-<p>At this point we’ve seen two ways to raise a number to a power: we can use the <code class="docutils literal notranslate"><span class="pre">math.pow</span></code> function or the exponentiation operator, <code class="docutils literal notranslate"><span class="pre">**</span></code>.
-Either one is fine, but the operator is used more often than the function.</p>
+<p>Nan pwen sa a, nou wè de fason pou ogmante yon nimewo nan yon pouvwa: nou ka itilize fonksyon <code>math.pow</code> oswa operatè eksponansyasyon an, <code>**</code>. Yo tou de apwopriye, men operatè a pi souvan itilize pase fonksyon an.</p>
 </section>
 <section id="expressions-and-statements">
-<h2><span class="section-number">2.5. </span>Expressions and statements<a class="headerlink" href="#expressions-and-statements" title="Link to this heading">#</a></h2>
-<p>So far, we’ve seen a few kinds of expressions.
-An expression can be a single value, like an integer, floating-point number, or string.
-It can also be a collection of values and operators.
-And it can include variable names and function calls.
-Here’s an expression that includes several of these elements.</p>
+<h2><span class="section-number">2.5. </span>Ekspresyon ak deklarasyon<a class="headerlink" href="#expressions-and-statements" title="Link to this heading">#</a></h2>
+<p>Jiskaprezan, nou wè kèk kalite ekspresyon. Yon ekspresyon ka yon valè sèl, tankou yon nimewo antye, yon nimewo k ap flote, oswa yon fisèl. Li ka tou yon koleksyon valè ak operatè. Epi li ka gen ladan non varyab ak apèl fonksyon. Men yon ekspresyon ki gen plizyè nan eleman sa yo.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">19</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="nb">round</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
@@ -657,9 +644,7 @@ Here’s an expression that includes several of these elements.</p>
 </div>
 </div>
 </div>
-<p>We have also seen a few kind of statements.
-A <strong>statement</strong> is a unit of code that has an effect, but no value.
-For example, an assignment statement creates a variable and gives it a value, but the statement itself has no value.</p>
+<p>Nou te wè tou kèk kalite deklarasyon. Yon <strong>deklarasyon</strong> se yon inite kòd ki gen yon efè, men ki pa gen okenn valè. Pa egzanp, yon deklarasyon asiyasyon kreye yon varyab epi bay li yon valè, men deklarasyon an menm pa gen okenn valè.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">17</span>
@@ -667,7 +652,7 @@ For example, an assignment statement creates a variable and gives it a value, bu
 </div>
 </div>
 </div>
-<p>Similarly, an import statement has an effect – it imports a module so we can use the variables and functions it contains – but it has no visible effect.</p>
+<p>Menm jan an tou, yon deklarasyon enpòte gen yon efè -- li enpòte yon modil pou nou ka itilize varyab ak fonksyon ki ladan li - men li pa gen okenn efè vizib.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -675,12 +660,11 @@ For example, an assignment statement creates a variable and gives it a value, bu
 </div>
 </div>
 </div>
-<p>Computing the value of an expression is called <strong>evaluation</strong>.
-Running a statement is called <strong>execution</strong>.</p>
+<p>Kalkile valè yon ekspresyon rele <strong>evalyasyon</strong>. Egzekite yon deklarasyon rele <strong>egzekisyon</strong>.</p>
 </section>
 <section id="the-print-function">
-<h2><span class="section-number">2.6. </span>The print function<a class="headerlink" href="#the-print-function" title="Link to this heading">#</a></h2>
-<p>When you evaluate an expression, the result is displayed.</p>
+<h2><span class="section-number">2.6. </span>Fonksyon print la<a class="headerlink" href="#the-print-function" title="Link to this heading">#</a></h2>
+<p>Lè ou evalye yon ekspresyon, rezilta a parèt.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
@@ -693,7 +677,7 @@ Running a statement is called <strong>execution</strong>.</p>
 </div>
 </div>
 </div>
-<p>But if you evaluate more than one expression, only the value of the last one is displayed.</p>
+<p>Men, si ou evalye plis pase yon ekspresyon, sèlman valè dènye a ki ap parèt.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">+</span> <span class="mi">2</span>
@@ -707,7 +691,7 @@ Running a statement is called <strong>execution</strong>.</p>
 </div>
 </div>
 </div>
-<p>To display more than one value, you can use the <code class="docutils literal notranslate"><span class="pre">print</span></code> function.</p>
+<p>Pou montre plis pase yon valè, ou ka itilize fonksyon <code>print</code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
@@ -722,44 +706,43 @@ Running a statement is called <strong>execution</strong>.</p>
 </div>
 </div>
 </div>
-<p>It also works with floating-point numbers and strings.</p>
+<p>Li fonksyone tou ak nimewo k ap flote ak fisèl.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The value of pi is approximately&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Valè pi a se apeprè'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value of pi is approximately
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Valè pi a se apeprè
 3.141592653589793
 </pre></div>
 </div>
 </div>
 </div>
-<p>You can also use a sequence of expressions separated by commas.</p>
+<p>Ou ka itilize tou yon sekans ekspresyon separe pa vigil.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The value of pi is approximately&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Valè pi a se apeprè'</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The value of pi is approximately 3.141592653589793
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Valè pi a se apeprè 3.141592653589793
 </pre></div>
 </div>
 </div>
 </div>
-<p>Notice that the <code class="docutils literal notranslate"><span class="pre">print</span></code> function puts a space between the values.</p>
-</section>
+<p>Remake ke fonksyon <code>print</code> mete yon espas ant valè yo.</p>
 <section id="arguments">
-<h2><span class="section-number">2.7. </span>Arguments<a class="headerlink" href="#arguments" title="Link to this heading">#</a></h2>
-<p>When you call a function, the expression in parenthesis is called an <strong>argument</strong>.
-Normally I would explain why, but in this case the technical meaning of a term has almost nothing to do with the common meaning of the word, so I won’t even try.</p>
-<p>Some of the functions we’ve seen so far take only one argument, like <code class="docutils literal notranslate"><span class="pre">int</span></code>.</p>
+<h2><span class="section-number">2.7. </span>Agiman<a class="headerlink" href="#Agiman" title="Link to this heading">#</a></h2>
+<p>Lè ou rele yon fonksyon, ekspresyon an nan parantèz yo rele yon <strong>agiman</strong>.
+Nòmalman mwen ta eksplike poukisa, men nan ka sa a, siyifikasyon teknik yon tèm prèske pa gen okenn rapò ak siyifikasyon komen mo a, kidonk mwen pap eseye eksplike li.</p>
+<p>Gen kèk fonksyon nou te wè ki pran sèlman yon agiman, tankou <code>int</code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;101&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">'101'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -769,7 +752,7 @@ Normally I would explain why, but in this case the technical meaning of a term h
 </div>
 </div>
 </div>
-<p>Some take two, like <code class="docutils literal notranslate"><span class="pre">math.pow</span></code>.</p>
+<p>Gen kèk ki pran de agiman, tankou <code>math.pow</code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -782,11 +765,10 @@ Normally I would explain why, but in this case the technical meaning of a term h
 </div>
 </div>
 </div>
-<p>Some can take additional arguments that are optional.
-For example, <code class="docutils literal notranslate"><span class="pre">int</span></code> can take a second argument that specifies the base of the number.</p>
+<p>Gen kèk ki ka pran agiman siplemantè ki se opsyonèl. Pa egzanp, <code>int</code> ka pran yon dezyèm agiman ki endike baz nimewo a.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">&#39;101&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="s1">'101'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -796,8 +778,8 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>The sequence of digits <code class="docutils literal notranslate"><span class="pre">101</span></code> in base 2 represents the number 5 in base 10.</p>
-<p><code class="docutils literal notranslate"><span class="pre">round</span></code> also takes an optional second argument, which is the number of decimal places to round off to.</p>
+<p>Sekans chif <code>101</code> nan baz 2 reprezante nimewo 5 nan baz 10.</p>
+<p><code>round</code> pran tou yon dezyèm agiman opsyonèl, ki se kantite chif desimal pou awondi.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -810,23 +792,23 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>Some functions can take any number of arguments, like <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p>
+<p>Gen kèk fonksyon ki ka pran nenpòt kantite agiman, tankou <code>print</code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Any&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;of&#39;</span><span class="p">,</span> <span class="s1">&#39;arguments&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Nenpòt'</span><span class="p">,</span> <span class="s1">'kantite'</span><span class="p">,</span> <span class="s1">'agiman'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Any number of arguments
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nenpòt kantite agiman
 </pre></div>
 </div>
 </div>
 </div>
-<p>If you call a function and provide too many arguments, that’s a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>.</p>
+<p>Si ou rele yon fonksyon epi ou bay twòp agiman, sa se yon <code>TypeError</code>.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;123.0&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">float</span><span class="p">(</span><span class="s1">'123.0'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -836,7 +818,7 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>If you provide too few arguments, that’s also a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>.</p>
+<p>Si ou bay twò kèk agiman, sa se tou yon <code>TypeError</code>.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -849,10 +831,10 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>And if you provide an argument with a type the function can’t handle, that’s a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>, too.</p>
+<p>Epi si ou bay yon agiman ak yon tip ke fonksyon an pa ka jere, sa se yon <code>TypeError</code> tou.</p>
 <div class="cell tag_raises-exception docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="s1">&#39;123&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="s1">'123'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -862,149 +844,130 @@ For example, <code class="docutils literal notranslate"><span class="pre">int</s
 </div>
 </div>
 </div>
-<p>This kind of checking can be annoying when you are getting started, but it helps you detect and correct errors.</p>
+<p>Kalite chèk sa yo ka annuyant lè ou fèk kòmanse, men li ede w detekte ak korije erè yo.</p>
 </section>
-<section id="comments">
-<h2><span class="section-number">2.8. </span>Comments<a class="headerlink" href="#comments" title="Link to this heading">#</a></h2>
-<p>As programs get bigger and more complicated, they get more difficult to read.
-Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing and why.</p>
-<p>For this reason, it is a good idea to add notes to your programs to explain in natural language what the program is doing.
-These notes are called <strong>comments</strong>, and they start with the <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol.</p>
+<section id="komante">
+<h2 id="K%C3%B2mant%C3%A8">Kòmantè<a class="anchor-link" href="#K%C3%B2mant%C3%A8"></a></h2>
+<p>Lè pwogram yo vin pi gwo epi pi konplike, yo vin pi difisil pou li.
+Lang fòmèl yo se dans, epi souvan difisil pou gade yon moso kòd epi konprann sa li ap fè ak poukisa.</p>
+<p>Pou rezon sa a, li bon pou ajoute nòt nan pwogram ou pou eksplike nan lang natirèl sa pwogram nan ap fè.
+Nòt sa yo rele <strong>kòmantè</strong>, epi yo kòmanse ak senbòl <code>#</code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># number of seconds in 42:42</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># nimewo de segond nan 42:42</span>
 <span class="n">seconds</span> <span class="o">=</span> <span class="mi">42</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="mi">42</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>In this case, the comment appears on a line by itself. You can also put
-comments at the end of a line:</p>
+<p>Nan ka sa a, kòmantè a parèt sou yon liy poukont li. Ou ka mete kòmantè tou nan fen yon liy:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">miles</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mf">1.61</span>     <span class="c1"># 10 kilometers in miles</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">miles</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mf">1.61</span>     <span class="c1"># 10 kilomèt an milye</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Everything from the <code class="docutils literal notranslate"><span class="pre">#</span></code> to the end of the line is ignored—it has no
-effect on the execution of the program.</p>
-<p>Comments are most useful when they document non-obvious features of the code.
-It is reasonable to assume that the reader can figure out <em>what</em> the code does; it is more useful to explain <em>why</em>.</p>
-<p>This comment is redundant with the code and useless:</p>
+<p>Tout bagay soti nan <code>#</code> rive nan fen liy lan inyore—li pa gen okenn efè sou ekzekisyon pwogram nan.</p>
+<p>Kòmantè yo pi itil lè yo dokimante karakteristik kòd ki pa evidan.<br/>
+Li rezonab pou sipoze lektè a ka konprann <em>sa</em> kòd la fè; men li pi itil pou eksplike <em>poukisa</em>.</p>
+<p>Kòmantè sa a redondan ak kòd la epi li initil:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="mi">8</span>     <span class="c1"># assign 8 to v</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="mi">8</span>     <span class="c1"># asiyen 8 bay v</span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>This comment contains useful information that is not in the code:</p>
+<p>Kòmantè sa a genyen enfòmasyon itil ki pa nan kòd la:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="mi">8</span>     <span class="c1"># velocity in miles per hour </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">v</span> <span class="o">=</span> <span class="mi">8</span>     <span class="c1"># vitès an mil pa èdtan </span>
 </pre></div>
 </div>
 </div>
 </div>
-<p>Good variable names can reduce the need for comments, but long names can
-make complex expressions hard to read, so there is a tradeoff.</p>
+<p>Bon non varyab ka diminye bezwen pou kòmantè, men non ki long ka fè ekspresyon konplike difisil pou li, kidonk gen yon konpwomi.</p>
 </section>
 <section id="debugging">
-<h2><span class="section-number">2.9. </span>Debugging<a class="headerlink" href="#debugging" title="Link to this heading">#</a></h2>
-<p>Three kinds of errors can occur in a program: syntax errors, runtime errors, and semantic errors.
-It is useful to distinguish between them in order to track them down more quickly.</p>
-<ul class="simple">
-<li><p><strong>Syntax error</strong>: “Syntax” refers to the structure of a program and the rules about that structure. If there is a syntax error anywhere in your program, Python does not run the program. It displays an error message immediately.</p></li>
-<li><p><strong>Runtime error</strong>: If there are no syntax errors in your program, it can start running. But if something goes wrong, Python displays an error message and stops. This type of error is called a runtime error. It is also called an <strong>exception</strong> because it indicates that something exceptional has happened.</p></li>
-<li><p><strong>Semantic error</strong>: The third type of error is “semantic”, which means related to meaning. If there is a semantic error in your program, it runs without generating error messages, but it does not do what you intended. Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.</p></li>
+<h1 id="Debogaj">Debogaj<a class="anchor-link" href="#Debogaj"></a></h1>
+<p>Twa kalite erè ka parèt nan yon pwogram: erè sentaks, erè tan-ekzekisyon, ak erè semantik. Li itil pou fè diferans ant yo pou ou ka rezoud yo pi vit.</p>
+<ul>
+<li><p><strong>Erè sentaks</strong>: "Sentaks" refere a estrikti yon pwogram ak règleman sou estrikti sa a. Si gen yon erè sentaks nenpòt kote nan pwogram ou, Python pa kouri pwogram nan. Li montre yon mesaj erè imedyatman.</p></li>
+<li><p><strong>Erè tan-ekzekisyon</strong>: Si pa gen okenn erè sentaks nan pwogram ou, li ka kòmanse kouri. Men si yon bagay ale mal, Python montre yon mesaj erè epi sispann. Kalite erè sa a rele yon erè tan-ekzekisyon. Yo rele li tou yon <strong>eksepsyon</strong> paske li endike ke yon bagay ekstraòdinè rive.</p></li>
+<li><p><strong>Erè semantik</strong>: Twazyèm kalite erè a se "semantik", ki vle di li gen rapò ak siyifikasyon. Si gen yon erè semantik nan pwogram ou, li kouri san yo pa pwodui mesaj erè, men li pa fè sa ou te entansyon fè. Idantifye erè semantik yo ka difisil paske li mande pou ou travay bak nan gade pwodiksyon pwogram nan epi eseye konprann sa li ap fè.</p></li>
 </ul>
-<p>As we’ve seen, an illegal variable name is a syntax error.</p>
-<div class="cell tag_raises-exception docutils container">
+<p>Kòm nou te wè, yon non varyab ilegal se yon erè sentaks.</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">million</span><span class="o">!</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000000</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">40</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="n">million</span><span class="o">!</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000000</span>
-           <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">expect</span> SyntaxError
+
+million! = 1000000
 </pre></div>
 </div>
 </div>
 </div>
-<p>If you use an operator with a type it doesn’t support, that’s a runtime error.</p>
-<div class="cell tag_raises-exception docutils container">
+<p>Si ou itilize yon operatè ak yon tip ke li pa sipòte, sa se yon erè tan-ekzekisyon.</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;126&#39;</span> <span class="o">/</span> <span class="mi">3</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">expect</span> TypeError
+
+'126' / 3
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">TypeError</span>: unsupported operand type(s) for /: &#39;str&#39; and &#39;int&#39;
-</pre></div>
 </div>
-</div>
-</div>
-<p>Finally, here’s an example of a semantic error.
-Suppose we want to compute the average of <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">3</span></code>, but we forget about the order of operations and write this:</p>
+<p>Finalman, men yon egzanp yon erè semantik. Ann sipoze nou vle kalkile mwayèn <code>1</code> ak <code>3</code>, men nou bliye lòd operasyon an epi nou ekri sa:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.5
-</pre></div>
 </div>
-</div>
-</div>
-<p>When this expression is evaluated, it does not produce an error message, so there is no syntax error or runtime error.
-But the result is not the average of <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">3</span></code>, so the program is not correct.
-This is a semantic error because the program runs but it doesn’t do what’s intended.</p>
+<p>Lè ekspresyon sa a evalye, li pa pwodui yon mesaj erè, kidonk pa gen okenn erè sentaks oswa erè tan-ekzekisyon.
+Men rezilta a se pa mwayèn <code>1</code> ak <code>3</code>, kidonk pwogram nan pa kòrèk.
+Sa a se yon erè semantik paske pwogram nan kouri men li pa fè sa ki te entansyon.</p>
 </section>
 <section id="glossary">
-<h2><span class="section-number">2.10. </span>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
-<p><strong>variable:</strong>
-A name that refers to a value.</p>
-<p><strong>assignment statement:</strong>
-A statement that assigns a value to a variable.</p>
-<p><strong>state diagram:</strong>
-A graphical representation of a set of variables and the values they refer to.</p>
-<p><strong>keyword:</strong>
-A special word used to specify the structure of a program.</p>
-<p><strong>import statement:</strong>
-A statement that reads a module file so we can use the variables and functions it contains.</p>
-<p><strong>module:</strong>
-A file that contains Python code, including function definitions and sometimes other statements.</p>
-<p><strong>dot operator:</strong>
-The operator, <code class="docutils literal notranslate"><span class="pre">.</span></code>, used to access a function in another module by specifying the module name followed by a dot and the function name.</p>
-<p><strong>evaluate:</strong>
-Perform the operations in an expression in order to compute a value.</p>
-<p><strong>statement:</strong>
-One or more lines of code that represent a command or action.</p>
-<p><strong>execute:</strong>
-Run a statement and do what it says.</p>
-<p><strong>argument:</strong>
-A value provided to a function when the function is called.</p>
-<p><strong>comment:</strong>
-Text included in a program that provides information about the program but has no effect on its execution.</p>
-<p><strong>runtime error:</strong>
-An error that causes a program to display an error message and exit.</p>
-<p><strong>exception:</strong>
-An error that is detected while the program is running.</p>
-<p><strong>semantic error:</strong>
-An error that causes a program to do the wrong thing, but not to display an error message.</p>
+<h2 id="Glosè">Glosè<a class="anchor-link" href="#Glosè"></a></h2>
+<p><strong>varyab:</strong>
+Yon non ki refere a yon valè.</p>
+<p><strong>deklarasyon afeksyon:</strong>
+Yon deklarasyon ki afekte yon valè nan yon varyab.</p>
+<p><strong>dyagram eta:</strong>
+Yon reprezantasyon grafik de yon seri varyab ak valè yo refere a yo.</p>
+<p><strong>mo kle:</strong>
+Yon mo espesyal ki itilize pou presize estrikti yon pwogram.</p>
+<p><strong>deklarasyon import:</strong>
+Yon deklarasyon ki li yon fichye modil pou nou ka itilize varyab ak fonksyon li genyen yo.</p>
+<p><strong>modil:</strong>
+Yon fichye ki gen kòd Python, ki ka gen definisyon fonksyon ak pafwa lòt deklarasyon.</p>
+<p><strong>operatè pwen:</strong>
+Operatè a, <code>.</code> (pwen), ki itilize pou jwenn aksè a yon fonksyon nan yon lòt modil lè ou presize non modil la, ki swiv pa yon pwen ak non fonksyon an.</p>
+<p><strong>evalye:</strong>
+Fè operasyon yo nan yon ekspresyon pou kalkile yon valè.</p>
+<p><strong>deklarasyon:</strong>
+Youn oswa plis liy kòd ki reprezante yon kòmand oswa aksyon.</p>
+<p><strong>egzekite:</strong>
+Kouri yon deklarasyon epi fè sa li di.</p>
+<p><strong>agiman:</strong>
+Yon valè yo bay yon fonksyon lè yo rele fonksyon an.</p>
+<p><strong>komantè:</strong>
+Tèks ki enkli nan yon pwogram pou bay enfòmasyon sou pwogram nan men ki pa gen okenn efè sou ekzekisyon an.</p>
+<p><strong>erè ekzekisyon:</strong>
+Yon erè ki lakòz yon pwogram montre yon mesaj erè epi fèmen.</p>
+<p><strong>eksepsyon:</strong>
+Yon erè ki detekte pandan pwogram nan ap kouri.</p>
+<p><strong>erè semantik:</strong>
+Yon erè ki fè yon pwogram fè yon bagay ki pa kòrèk, men san li pa montre yon mesaj erè.</p>
 </section>
 <section id="exercises">
-<h2><span class="section-number">2.11. </span>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<h2 id="Egzèsis">Egzèsis<a class="anchor-link" href="#Egzèsis"></a></h2>
 <div class="cell tag_remove-print tag_keep docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This cell tells Jupyter to provide detailed debugging information</span>
-<span class="c1"># when a runtime error occurs. Run it before working on the exercises.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Selil sa a di Jupyter pou bay enfòmasyon detaye sou debogaj lè gen yon erè pandan ekzekisyon. </span>
+<span class="c1"># Kouri li anvan ou travay sou egzèsis yo.</span>
 
 <span class="o">%</span><span class="k">xmode</span> Verbose
 </pre></div>
@@ -1017,45 +980,39 @@ An error that causes a program to do the wrong thing, but not to display an erro
 </div>
 </div>
 <section id="ask-a-virtual-assistant">
-<h3><span class="section-number">2.11.1. </span>Ask a virtual assistant<a class="headerlink" href="#ask-a-virtual-assistant" title="Link to this heading">#</a></h3>
-<p>Again, I encourage you to use a virtual assistant to learn more about any of the topics in this chapter.</p>
-<p>If you are curious about any of keywords I listed, you could ask “Why is class a keyword?” or “Why can’t variable names be keywords?”</p>
-<p>You might have noticed that <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, and <code class="docutils literal notranslate"><span class="pre">str</span></code> are not Python keywords.
-They are variables that represent types, and they can be used as functions.
-So it is <em>legal</em> to have a variable or function with one of those names, but it is strongly discouraged. Ask an assistant “Why is it bad to use int, float, and str as variable names?”</p>
-<p>Also ask, “What are the built-in functions in Python?”
-If you are curious about any of them, ask for more information.</p>
-<p>In this chapter we imported the <code class="docutils literal notranslate"><span class="pre">math</span></code> module and used some of the variable and functions it provides. Ask an assistant, “What variables and functions are in the math module?” and “Other than math, what modules are considered core Python?”</p>
+<h3 id="Mande-yon-asistan-vityèl">Mande yon asistan vityèl<a class="anchor-link" href="#Mande-yon-asistan-vityèl"></a></h3>
+<p>Ankò, mwen ankouraje w itilize yon asistan vityèl pou aprann plis sou nenpòt nan sijè nan chapit sa a.</p>
+<p>Si ou kirye sou nenpòt nan mokle mwen te site, ou ka mande "Poukisa 'class' se yon mo kle?" oswa "Poukisa non varyab pa ka mo rezève?"</p>
+<p>Ou ka remake ke <code>int</code>, <code>float</code>, ak <code>str</code> pa mo kle Python. Yo se varyab ki reprezante tip, e yo ka itilize kòm fonksyon. Donk li legal pou gen yon varyab oswa fonksyon ak youn nan non sa yo, men li dekouraje anpil. Mande yon asistan "Poukisa li pa bon itilize int, float, ak str kòm non varyab?"</p>
+<p>Tou mande, "Ki fonksyon ki bati nan Python?" Si ou kirye sou nenpòt nan yo, mande plis enfòmasyon.</p>
+<p>Nan chapit sa a nou te enpòte modil <code>math</code> la epi itilize kèk nan varyab ak fonksyon li genyen yo. Mande yon asistan, "Ki varyab ak fonksyon ki nan modil math?" epi "Anplis math, ki modil Python konsidere kòm modil debaz?"</p>
 </section>
 <section id="exercise">
-<h3><span class="section-number">2.11.2. </span>Exercise<a class="headerlink" href="#exercise" title="Link to this heading">#</a></h3>
-<p>Repeating my advice from the previous chapter, whenever you learn a new feature, you should make errors on purpose to see what goes wrong.</p>
-<ul class="simple">
-<li><p>We’ve seen that <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">17</span></code> is legal. What about <code class="docutils literal notranslate"><span class="pre">17</span> <span class="pre">=</span> <span class="pre">n</span></code>?</p></li>
-<li><p>How about <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">1</span></code>?</p></li>
-<li><p>In some languages every statement ends with a semi-colon (<code class="docutils literal notranslate"><span class="pre">;</span></code>). What
-happens if you put a semi-colon at the end of a Python statement?</p></li>
-<li><p>What if you put a period at the end of a statement?</p></li>
-<li><p>What happens if you spell the name of a module wrong and try to import <code class="docutils literal notranslate"><span class="pre">maath</span></code>?</p></li>
+<h3 id="Egzèsis">Egzèsis<a class="anchor-link" href="#Egzèsis"></a></h3>
+<p>Mwen ap raple konsèy mwen nan chapit anvan an, chak fwa ou aprann yon karakteristik nouvo, ou ta dwe fè erè entansyonèlman pou wè sa ki pase.</p>
+<ul>
+<li><p>Nou te wè ke <code>n = 17</code> se legal. E pou <code>17 = n</code>?</p></li>
+<li><p>E kisa pou <code>x = y = 1</code>?</p></li>
+<li><p>Nan kèk langaj, chak deklarasyon fini ak yon pwen-virgil (<code>;</code>). Kisa ki pase si ou mete yon pwen-virgil nan fen yon deklarasyon Python?</p></li>
+<li><p>E si ou mete yon pwen nan fen yon deklarasyon?</p></li>
+<li><p>Kisa k ap pase si ou mal ekri non yon modil epi eseye enpòte <code>maath</code>?</p></li>
 </ul>
 </section>
 <section id="id1">
-<h3><span class="section-number">2.11.3. </span>Exercise<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>Practice using the Python interpreter as a calculator:</p>
-<p><strong>Part 1.</strong>  The volume of a sphere with radius <span class="math notranslate nohighlight">\(r\)</span> is <span class="math notranslate nohighlight">\(\frac{4}{3} \pi r^3\)</span>.
-What is the volume of a sphere with radius 5? Start with a variable named <code class="docutils literal notranslate"><span class="pre">radius</span></code> and then assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">volume</span></code>. Display the result. Add comments to indicate that <code class="docutils literal notranslate"><span class="pre">radius</span></code> is in centimeters and <code class="docutils literal notranslate"><span class="pre">volume</span></code> in cubic centimeters.</p>
-<p><strong>Part 2.</strong> A rule of trigonometry says that for any value of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\((\cos x)^2 + (\sin x)^2 = 1\)</span>. Let’s see if it’s true for a specific value of <span class="math notranslate nohighlight">\(x\)</span> like 42.</p>
-<p>Create a variable named <code class="docutils literal notranslate"><span class="pre">x</span></code> with this value.
-Then use <code class="docutils literal notranslate"><span class="pre">math.cos</span></code> and <code class="docutils literal notranslate"><span class="pre">math.sin</span></code> to compute the sine and cosine of <span class="math notranslate nohighlight">\(x\)</span>, and the sum of their squared.</p>
-<p>The result should be close to 1. It might not be exactly 1 because floating-point arithmetic is not exact—it is only approximately correct.</p>
-<p><strong>Part 3.</strong> In addition to <code class="docutils literal notranslate"><span class="pre">pi</span></code>, the other variable defined in the <code class="docutils literal notranslate"><span class="pre">math</span></code> module is <code class="docutils literal notranslate"><span class="pre">e</span></code>, which represents the base of the natural logarithm, written in math notation as <span class="math notranslate nohighlight">\(e\)</span>. If you are not familiar with this value, ask a virtual assistant “What is <code class="docutils literal notranslate"><span class="pre">math.e</span></code>?” Now let’s compute <span class="math notranslate nohighlight">\(e^2\)</span> three ways:</p>
-<ul class="simple">
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">math.e</span></code> and the exponentiation operator (<code class="docutils literal notranslate"><span class="pre">**</span></code>).</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">math.pow</span></code> to raise <code class="docutils literal notranslate"><span class="pre">math.e</span></code> to the power <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p></li>
-<li><p>Use <code class="docutils literal notranslate"><span class="pre">math.exp</span></code>, which takes as an argument a value, <span class="math notranslate nohighlight">\(x\)</span>, and computes <span class="math notranslate nohighlight">\(e^x\)</span>.</p></li>
+<h3 id="Egzèsis">Egzèsis<a class="anchor-link" href="#Egzèsis"></a></h3>
+<p>Pratike itilize Python entèprèt la kòm yon kalkilatris:</p>
+<p><strong>Pati 1.</strong> Volim yon esfer ak yon reyon $r$ se $\frac{4}{3} \pi r^3$. Ki volim yon esfer ki gen yon reyon 5? Kòmanse ak yon varyab ki rele <code>reyom</code> epi atribye rezilta a yon varyab ki rele <code>volim</code>. Montre rezilta a. Ajoute kòmantè pou endike ke <code>reyom</code> se nan santimèt epi <code>volim</code> nan santimèt kib.</p>
+
+<p><strong>Pati 2.</strong> Yon règ nan trigonometri di ke pou nenpòt valè $x$, $(\cos x)^2 + (\sin x)^2 = 1$. Ann wè si li vrè pou yon valè espesifik nan $x$ tankou 42.</p>
+<p>Kreye yon varyab ki rele <code>x</code> ak valè sa a. Epi itilize <code>math.cos</code> ak <code>math.sin</code> pou kalkile sinis ak kosin $x$ la, ak sòm kare yo.</p>
+<p>Rezilta a ta dwe prè de 1. Li pa ka egzakteman 1 paske aritmetik nimewo k ap flote pa egzak --- li jis apwoksimatif.</p>
+<p><strong>Pati 3.</strong> Anplis de <code>pi</code>, lòt varyab ki defini nan modil <code>math</code> la se <code>e</code>, ki reprezante baz logarit natirèl la, ekri nan notasyon matematik kòm $e$. Si ou pa abitye ak valè sa a, mande yon asistan vityèl "Kisa <code>math.e</code> ye?" Koulye a ann kalkile $e^2$ nan twa fason:</p>
+<ul>
+<li><p>Sèvi ak <code>math.e</code> ak operatè eksponansyasyon an (<code>**</code>).</p></li>
+<li><p>Sèvi ak <code>math.pow</code> pou ogmante <code>math.e</code> nan pouvwa <code>2</code>.</p></li>
+<li><p>Sèvi ak <code>math.exp</code>, ki pran kòm yon agiman yon valè, $x$, epi kalkile $e^x$.</p></li>
 </ul>
-<p>You might notice that the last result is slightly different from the other two.
-See if you can find out which is correct.</p>
+<p>Ou ka remake ke dènye rezilta a yon ti jan diferan de lòt de yo. Wè si ou ka chèche konnen kiyès ki kòrèk.</p>
 <p><a class="reference external" href="https://allendowney.github.io/ThinkPython/index.html">Think Python: 3rd Edition</a></p>
 <p>Copyright 2024 <a class="reference external" href="https://allendowney.com">Allen B. Downey</a></p>
 <p>Code license: <a class="reference external" href="https://mit-license.org/">MIT License</a></p>
